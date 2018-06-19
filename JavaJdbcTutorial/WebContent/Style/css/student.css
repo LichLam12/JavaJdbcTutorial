@@ -1,0 +1,68 @@
+/*Dùng cho all các giao diện có table quản lý và all trang personal info*/
+
+#cover h2 { /*phần baner của personal info - student*/
+    padding: 30px;
+}
+#cover #fullname_avt{ /*fullname dưới avatar của phần trên*/
+    font-size: 30px;
+    font-weight: bold;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+/*tiêu đề và 2 thao tác edit-save*/
+.info {
+    margin-top: 75px;
+}
+.per_info{
+    float: left;
+}
+
+.operation{
+    float: right;
+}
+.info h2 {
+    color: #d33d1a;
+    font-weight: 800;
+}
+
+.info input,
+.info button {
+    font-size: 18px;
+}
+.form-control{ /*các ô input info*/
+    margin-bottom: 8px;
+}
+.info button {
+    width: 100px;
+}
+
+.info .fa {
+    cursor: pointer;
+}
+
+.info th {
+    text-align: center;
+}
+
+#class-info {
+    margin-top: 15px;
+}
+
+.info .was-validated {
+
+}
+
+
+#btn-m ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+#btn-m li {
+    display: inline-block;
+    position: relative;
+}
+

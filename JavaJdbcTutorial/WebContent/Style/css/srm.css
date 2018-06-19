@@ -1,0 +1,46 @@
+
+.row .hiengiohang{
+    overflow: hidden;
+	transform: translateZ(0);
+    margin-top: 30px;
+}
+
+.row .hiengiohang h5{
+    background: #10af48 !important;
+    color: #fff;
+    margin-top: -30px;
+    padding: 12px 10px;
+    text-align: center;
+    left: 12%;
+    right: 12%;
+    position: absolute;
+	transform: translateY(100%);   /*dá»‹ch chuyá»ƒn Ä‘áº¿n nÆ¡i khÃ¡ xÃ¡*/
+    bottom: -8px;              /*-7 Ä‘á»ƒ cho nÃ³ máº¥t tiu luÃ´n*/
+    
+    -webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+}
+.row .hiengiohang:hover h5{  /*dá»‹ch chuyá»ƒn vá»� vá»‹ trÃ­ cÅ© khi hover*/
+    transform: translateY(0);
+    cursor: pointer;
+}
+.row .hiengiohang:hover img {  /*phÃ³ng to áº£nh khi hover*/
+	transform: scale(1.4);
+	opacity: 1;
+}
+.row .hiengiohang img {
+	max-width: 100%;
+	opacity: 0.75;
+    margin-bottom: 1px;
+}
+.row .hiengiohang * {  /*khi hover nÃ³ lÃ m cháº­m láº¡i quÃ¡ trÃ¬nh*/
+	box-sizing: border-box;
+	transition: all 0.35s ease;
+}
+
+/*phần img của kinh nghiệm làm đẹp*/
+.row .hiengiohang:hover .img_news {  /*phóng to ảnh khi hover*/
+	transform: scale(1.2) !important;
+	opacity: 1.1;
+}

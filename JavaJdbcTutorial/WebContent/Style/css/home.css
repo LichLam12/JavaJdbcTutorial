@@ -1,0 +1,670 @@
+/*Banner, login, about, class, news, clock, follow*/
+
+
+
+#modal-studentuser9 #btn .animated:hover{
+    color: #fff;
+    background: #ff3b00;
+}
+#modal-studentuser9 #btn .animated {
+    background: #ff6200;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.giohang{
+    width: 94% !important;
+    margin-left: 20px;
+    margin-bottom: 1000px;
+}
+.display_cart2{
+    width: 800px;
+    float: left;
+    
+    margin-right: 40px;
+    border: 1px solid #afa7a7;
+    padding: 10px;
+}
+.display_right_cart{
+    font-size: 20px;
+    border: 1px solid #afa7a7;
+    padding: 10px;
+    width: 400px;
+    float: left;
+}
+
+#banner {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    cursor: pointer;
+    /*Ä‘á»•i con trá»� chuá»™t khi di chuyá»ƒn Ä‘áº¿n*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -moz-transition: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+}
+#banner h2 {
+    font-family: "Jellyka - Nathaniel a Mystery";
+    font-size: 42pt;
+}
+
+#banner #title {
+    font-weight: bold;
+    padding: 10px;
+    font-size: 45pt;
+}
+
+#banner h1:hover {
+    text-decoration-line: overline;
+}
+
+
+/*underbanner*/
+#underbanner{
+    position: relative;
+    clear: both;
+    box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+.underbanner{
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 3% 0.7% 2% 1.2%;
+    text-align: center;
+    width: 22.78%;
+    height: 55px;
+    padding-bottom: 5%;
+    border-bottom: 5px solid #7aa93c;
+
+}
+#underbanner img{
+    float: left !important;
+}
+#underbanner p{
+    float: left;
+    font-size: 16px;
+    margin-left: 0.4%;
+    text-align: center;
+    padding-top: 4px;
+}
+
+
+/*======================pháº§n login&register======================*/
+#login {
+    background-image: url(../images/pattern/pattern1.jpg);
+    background-repeat: repeat;
+    height: 100%;
+    padding: 25px 50px 50px 50px;
+}
+
+#login h1 { /*chá»‰ lÃ  1 khoáº£ng trá»‘ng rá»—ng Ä‘á»ƒ táº¡o khoáº£ng cÃ¡ch, do bá»‹ lá»—i nÃªn fix nhÆ° v*/
+    padding-bottom: 25px;
+}
+
+
+#login #btn {
+    display: inline-block; /*==cÃ¡c tháº» náº±m ngang trÃªn Ä‘á»‘i tÆ°á»£ng bao quanh nÃ³==*/
+    padding-top: 20px;
+}
+
+#login #btn_left {
+    margin-right: 45px;
+}
+
+/* Mau sac cua cac button*/
+
+#login .btn {
+    background-color: #05984f;
+    cursor: pointer; 
+}
+
+.btn .round { /*chá»‰nh mÃ u nháº¡t hÆ¡n cho cá»¥c mÅ©i tÃªn trÃ²n á»Ÿ btn login vÃ  register cho nÃ³ Ä‘áº¹p*/
+    background-color: #06b960;
+}
+
+
+/* Thiáº¿t láº­p chung cho cÃ¡c button */
+#login #btn a {
+    text-decoration: none;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    padding: 12px 53px 12px 23px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: relative; /*==cá»‘ Ä‘á»‹nh btn mÃ  chÃºng ta hover, thiáº¿t láº­p nÃ³ vá»›i vá»‹ trÃ­ ta Ä‘áº·t ra-nguyÃªn thá»§y, k so vá»›i báº¥t cá»© tháº» máº¹ nÃ o,form hay mÃ n hÃ¬nh mÃ¡y==*/
+    /*thá»�i gian chuyá»ƒn Ä‘á»™ng khi gÃª chuá»™t vÃ o 0.3s, cháº­m hÆ¡n bthg */
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    display: inline-block;  /*Ä‘Ã£ relative r thÃ¬ dÃ¹ng chi??*/
+}
+
+
+#login #btn a span { /*thẻ này chứa nội dung là: login, register*/
+    position: relative;  /*cố định nó trong thẻ mẹ, k cố định nó thì mỗi lần hover hiệu ứng chạy (.round) qua của vòng tròn mũi tên che mất value của btn*/
+    z-index: 3;  /*thực hiện sau .round (vòng tròn mũi tên), k thôi mũi tên góc phải login, register này ăn mất value của btn*/
+    margin-left: -5px;
+}
+
+#login #btn a .round { /*2 biểu tượng vòng tròn của mũi tên sử dụng bootstrap bên góc phải ô btn login, register*/
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 35px;
+    height: 38px;
+    position: absolute; /*==vòng tròn mũi tên nổi lên trên span đã cố định==*/
+                         /*==vòng tròn mũi tên thành kiểu absolute để nó luôn luôn nằm trong phạm vi span mẹ (relative)==*/
+    /*canh cho nó lọt vô góc phải span*/
+    right: 3px;
+    top: 3px;
+    /*k thấy tác dụng ?????????
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    */
+    z-index: 2;
+}
+
+#login #btn a .round i { /*2 biá»ƒu tÆ°á»£ng mÅ©i tÃªn nhá»� bÃªn trong vÃ²ng trÃ²n .round*/
+    position: absolute; /*==mÅ©i tÃªn ná»•i lÃªn trÃªn vÃ²ng trÃ²n Ä‘Ã£ cá»‘ Ä‘á»‹nh==*/
+    top: 50%;
+    margin-top: -6px;
+    left: 50%;
+    margin-left: -4px;
+        /*k tháº¥y tÃ¡c dá»¥ng ?????????*/
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#login #btn .txt {
+    font-size: 18px;
+    line-height: 1.15;
+}
+
+#login #btn a:hover {
+    /*má»©c thÃ´ng sá»‘ cháº¡y pháº£i trÃ¡i nÃ y sáº½ cÃ¢n báº±ng Ä‘c 2 tháº» a chá»©a 2 span login, register nÃ y. khi gÃª chuá»™t vÃ o nÃ³ k cháº¡y quÃ¡ xa, mÃ  nhÆ° Ä‘á»©ng yÃªn Ä‘á»ƒ mÅ©i tÃªn cháº¡y*/
+    padding-left: 38px; /*cháº¡y pháº£i 48px*/
+    padding-right: 40px;
+}
+
+#login #btn a:hover .round { /*vÃ²ng trÃ²n cá»§a mÅ©i tÃªn*/
+    /*HÃ m calc() tÃ­nh toÃ¡n kÃ­ch thÆ°á»›c trong CSS*/
+    /*má»—i vÃ²ng trÃ²n bÃªn trong 2 tháº» a Ä‘Ã³, ta Ä‘áº·t chiá»�u rá»™ng = 100% so vá»›i vÃ²ng trÃ²n khi hover (bao gá»“m cáº£ giÃ¡ trá»‹ margin vÃ  padding)*/
+    width: calc(100% - 6px);
+    /*thÃ´ng sá»‘ bo trÃ²n cho vá»«a 2 tháº» a*/
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    
+    /*
+    Vá»›i cÃ¡ch lÃ m trÃªn báº¡n sáº½ luÃ´n cÃ³ Ä‘Æ°á»£c sá»± Ä‘áº£m báº£o ráº±ng giao diá»‡n responsive cá»§a báº¡n cÃ³ thá»ƒ co giáº£n má»™t cÃ¡ch thoáº£i mÃ¡i vÃ  sáº½ váº«n dá»¯ nguyÃªn tá»· lá»‡ kÃ­ch thÆ°á»›c mÃ  báº¡n Ä‘áº·t.
+    TÃ­nh nÄƒng nay hiá»‡n chá»‰ há»• trá»£ á»Ÿ cÃ¡c trÃ¬nh duyá»‡t hiá»‡n Ä‘áº¡i, vá»›i Internet Explorer tá»« phiÃªn báº£n 9 trá»Ÿ lÃªn, Firefox vÃ  Chrome thÃ¬ pháº£i sá»­ dá»¥ng thÃªm tiá»�n tá»‘ prefix riÃªng -moz-, -webkit-.
+    */
+}
+
+#login #btn a:hover .round i { /*mÅ©i tÃªn*/
+    left: 12%;
+}
+
+
+#classes,
+#news {
+    margin-top: 75px;
+}
+
+#classes img {
+    padding-right: 23px
+}
+
+#classes h2 {
+    padding: 10px 0;
+    color: #d33d1a;
+}
+/*cÃ¡c Ã´ facebook,twitter,...á»Ÿ footer*/
+#classes i,
+footer i {
+    padding-right: 12px;
+}
+/*cÃ¡c cá»¥c check á»Ÿ Benefits, á»Ÿ CLASS*/
+#classes i {
+    color: #d33d1a;
+}
+
+#classes h5:hover {
+    cursor: pointer;
+    color: #d33d1a;
+    transition: 0.15s;
+}
+
+#classes h3 {
+    color: #1584e3;
+    padding-top: 180px;
+    padding-bottom: 20px;
+}
+
+#classes .new p {
+    padding-bottom: 70px;
+}
+
+#clockdiv {
+    color: #fff;
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 40px;
+}
+
+#clockdiv>div {
+    padding: 10px;
+    border-radius: 3px;
+    background: #017dcb;
+    display: inline-block;
+}
+
+#clockdiv div>span {
+    padding: 15px;
+    border-radius: 3px;
+    background: #004f81;
+    display: inline-block;
+}
+
+.smalltext {
+    padding-top: 5px;
+    font-size: 18px;
+}
+
+/*===Pháº§n FOLLOW káº¿ Footer===*/
+#follow {
+    margin-top: 100px;
+}
+#follow img {
+    height: 120px;
+    padding: 12px;
+}
+
+#follow h1 {
+    padding: 12px;
+}
+#follow .form {
+    margin: 0 0 70px;
+}
+/*Ã´ input nháº­p email á»Ÿ FOLLOW*/
+#follow .input {
+    background: #fff;
+    width: 360px;
+    height: 40px;
+    border: 2px solid #0a984e;
+    border-radius: 3px 0 0 3px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    letter-spacing: -0.14px;
+}
+/*nÃºt Send á»Ÿ FOLLOW*/
+#follow .button {
+    background: #0a984e;
+    height: 40px;
+    border: 2px;
+    border-radius: 0 3px 3px 0;
+    margin: 0 0 0 -1px;
+    padding: 0px 24px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: -0.11px;
+    cursor: pointer;
+     margin-top: -2px;
+}
+#follow .button:hover{
+    background: #08b45a;
+}
+
+
+
+
+
+/*========================================FOOTER======================================================*/
+/*a {
+    text-decoration: none;
+ 
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition:  all .2s linear;
+    transition: all .2s linear;
+}*/
+
+.clear {
+    clear: both;
+}
+
+footer {
+    background-color: #2E3639;
+    position: relative;
+    z-index: 1;
+}
+/*thanh mÃ u xanh nhá»� nhá»� trÃªn Ä‘áº§u footer*/
+footer .splitter {
+    background-color: #05984f; 
+    height: 8px;
+    margin-top: 75px;
+}
+
+footer > ul {
+    list-style: none outside none;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+    padding: 25px 0;
+    position: relative;
+    width: 95%;
+}
+footer > ul li {
+    float: left;
+    padding: 20px 0px;
+    width: 48.51%;
+ 
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+footer > ul li:first-child {
+    padding-left: 0;
+}
+footer > ul li:nth-child(3) {
+    padding-right: 0;
+}
+
+footer > ul li .text {
+    color: #a8a8a8;
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 40px;
+    position: relative;
+    text-align: justify;
+}
+.text h4 {
+    color: #fff;
+    font-size: 24px;
+    padding: 12px 0;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text p {
+    line-height: 30px;
+}
+
+.text h4:hover {
+    color: #05984f;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.text a {
+    border-bottom: 2px dotted transparent;
+    color: #05984f;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/*Menu, pháº§n thanh báº£n quyá»�n cuá»‘i trang*/
+footer .bar {
+    background-color: #1E2629;
+    padding: 20px 0;
+}
+footer .bar-wrap {
+    font-size: 12px;
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+    width: 95%;
+}
+/*dÃ²ng lá»‡nh á»Ÿ thanh báº£n quyá»�n Ä‘Ã³*/
+.copyright {
+    color: #778888;
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+
+/* Social */
+/*Ã´ facebook. twitter,... á»Ÿ footer*/
+.social-icons a {
+    color: #788;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.fa-facebook-square {
+    padding: 10px 15px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.fa-facebook-square:hover {
+    background-color: #3d5b99;
+}
+
+.fa-twitter-square {
+    padding: 10px 15px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.fa-twitter-square:hover {
+    background-color: #00aced;
+}
+
+.fa-rss-square {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.fa-rss-square:hover {
+    background-color: #eb8231;
+}
+
+.fa-youtube-square {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.fa-youtube-square:hover {
+    background-color: #e64a41;
+}
+
+.fa-linkedin-square {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.fa-linkedin-square:hover {
+    background-color: #0073a4;
+}
+
+.fa-google-plus-square {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.fa-google-plus-square:hover {
+    background-color: #e25714;
+}
+
+
+
+
+/*Táº¡o kháº£ nÄƒng Responsive, giÃºp cho footer cÃ³ kháº£ nÄƒng hiá»ƒn thá»‹ tá»‘t trÃªn má»�i kÃ­ch thÆ°á»›c mÃ n hÃ¬nh*/
+@media screen and (max-width: 1000px){
+    .links, .social, .copyright{
+        float:none;
+        text-align:center;
+    }
+    .social {
+        position:relative;
+        margin:10px 0;
+    }
+    .links li {
+        display:inline-block;
+        float:none;
+    }
+    .bar {
+        position:relative;
+    }
+    .bar-wrap {
+        margin-bottom:0;
+    }
+}
+ 
+@media screen and (max-width: 835px)  {
+    footer > ul li {
+        float:none;
+        width:auto;
+    }
+}
+ 
+@media screen and (max-width: 768px)  {
+    .links li {
+        margin-right:5px;
+    }
+}
+
+
+
+.hr_line{
+    border: 2px solid #10af48;
+    margin: 70px 0px -50px 0px; 
+}
+
+
+
+/*==============btn thÃªm vÃ o giá»Ÿ hÃ ng cá»§a trang hiá»‡n tá»«ng sp===========================*/
+.into_giohang{
+}
+.input_soluongsp{
+    border: 2px solid #4d8ffa;
+    padding: 11px 0px 10px 10px;
+    border-radius: 1px;
+}
+.btn_soluongsp{
+    padding: 9px 16px 11px 16px;
+    font-size: 18.5px;
+    color: #fff;
+    background: #4d8ffa;
+    border-radius: 1px;
+
+}
+.btn_soluongsp:hover{
+    background: #2377ff;
+    border: 2px solid #99b5e3;
+    border-radius: 3px;
+}
+
+.menu_introsp{
+    border-bottom: 2px solid #1a8d1e;
+}
+.menu_introsp ul li{
+    padding: 10px 20px;
+}
+.menu_introsp ul li a{
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+.menu_introsp ul li a:hover{
+    color: #1f9d23;
+}
+.ttct{
+    border-top: 1px solid #1a8d1e;
+    border-left: 1px solid #1a8d1e;
+    border-right: 1px solid #1a8d1e;
+}
+
+.introsp{
+    width: 84%;
+    margin: 5% 4% 3% 8%;
+}
+.contentsp{
+    margin: 2% 0;
+}
+
+
+/*==============================CÃ¡i table vÃ  icon edit, delete=====================================*/
+.button {
+  color: #aaa;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-top: -4px;
+}
+
+.edit:hover {
+  color: #0a79df;
+}
+
+.delete:hover {
+  color: #dc2a2a;
+}
+table{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
